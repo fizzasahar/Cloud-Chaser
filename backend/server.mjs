@@ -6,7 +6,8 @@ import userRoutes from "./routes/userRoutes.mjs";
 // Connecting MongoDB
 connectToDB();
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
+
 
 // ✅ Log all requests early
 app.use((req, res, next) => {
@@ -30,6 +31,9 @@ app.use(
 
 // ✅ Handle preflight OPTIONS request manually
 app.options('*', cors());
+app.use('*', (req, res) => {
+  res.status(404).json({ message: 'Route not found' });
+});
 
 app.use(express.json());
 app.use('/api/auth', userRoutes);
