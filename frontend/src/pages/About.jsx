@@ -137,6 +137,7 @@ const About = () => {
                                 Our Mission
                             </h3>
                             <p className="text-lg text-gray-200 dark:text-gray-300 leading-relaxed">
+                                To make weather predictions simple, reliable, and accessible for everyone – so that no one’s special day gets ruined by unexpected weather.
                                 Provide decision-ready weather information — not just numbers, but clear probabilities,
                                 confidence levels, and short recommendations so people can plan better and safer.
                             </p>
