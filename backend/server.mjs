@@ -13,7 +13,7 @@ app.use(
     origin: [
       'http://localhost:5174',
       'http://localhost:5173',
-      'https://cloud-chaser-psi.vercel.app/', // ✅ slash removed for consistency
+      'https://www.cloudchaser.earth', // ✅ slash removed for consistency
     ],
     methods: ['GET', 'PUT', 'POST', 'DELETE', 'PATCH'],
     credentials: true,
