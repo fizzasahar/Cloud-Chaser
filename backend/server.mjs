@@ -19,12 +19,8 @@ app.use(
   cors({
     origin: [
       'http://localhost:5173',
-<<<<<<< HEAD
       'http://localhost:5174',
       'https://www.cloudchaser.earth',
-=======
-      'https://www.cloudchaser.earth', // ✅ slash removed for consistency
->>>>>>> 08c68cc67530da89a91b3d0f23745b7e9bbffe66
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
